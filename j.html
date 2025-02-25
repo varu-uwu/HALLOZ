@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to pull a baddie</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            font-weight: 600;
+            text-transform: lowercase;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .step {
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #ff5e62;
+        }
+
+        button {
+            padding: 12px 20px;
+            background: #ff5e62;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #e64950;
+            transform: scale(1.05);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #secret-message {
+            color: #222;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 15px;
+            background: #ffdde1;
+            border-radius: 10px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>how to pull a baddie</h1>
+        <p class="subtitle">the only guide u’ll ever need (fr fr)</p>
+
+        <div class="step">
+            <h2>1. walk in like u own the place</h2>
+            <p>ur vibe should scream "main character." if ur energy dry, nobody’s checking for u.</p>
+        </div>
+
+        <div class="step">
+            <h2>2. dress like u got a life</h2>
+            <p>if ur clothes look like they been through 5 breakups, it’s over before it started.</p>
+        </div>
+
+        <div class="step">
+            <h2>3. talk like ur interesting</h2>
+            <p>“wyd” 50 times a day? nah. if u sound like an npc, u get treated like one.</p>
+        </div>
+
+        <div class="step">
+            <h2>4. final step... the ultimate secret</h2>
+            <p>this is where u unlock god-tier rizz. click below.</p>
+            <button onclick="showSecret()">reveal secret</button>
+        </div>
+
+        <div id="secret-message" class="hidden">
+            <h2>lmfao, bro.</h2>
+            <p>u really thought there was a tutorial? </p>
+            <p>listen up—rizz isn’t a formula, it’s confidence. be clean, be funny, and stop acting like pulling a baddie is a side quest.</p>
+            <p>now close this, fix ur posture, and go **outside**.</p>
+        </div>
+    </div>
+
+    <script>
+        function showSecret() {
+            document.getElementById("secret-message").classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>
